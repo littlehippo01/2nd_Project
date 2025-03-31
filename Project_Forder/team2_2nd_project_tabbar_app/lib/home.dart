@@ -22,26 +22,15 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("타이틀 자리 입니다."),
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-      ),
 
-      body: Center(
-        child: Column(
-          children: [
-            TabBarView(
-              controller: tabController,
-              children: [
-                Info1(),
-                Gall1(),
-                Quiz1(),
-                Enter1(),
-              ]
-            ),
-          ],
-        ),
+      body: TabBarView(
+        controller: tabController,
+        children: [
+          Info1(),
+          Gall1(),
+          Quiz1(),
+          Enter1(),
+        ]
       ),
 
       bottomNavigationBar: Container(
@@ -54,7 +43,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
             Text("Gall"),
             Text("Quiz"),
             Text("Enter"),
-        
           ]
         ),
       ),
