@@ -45,24 +45,43 @@ class _Info1State extends State<Info1> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
+               Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(onPressed:() {
-                     Navigator.push(context,MaterialPageRoute(builder: (context){
-            return Info2();
+                    Navigator.push(context,MaterialPageRoute(builder: (context){
+            return FirstPage();
           }));
                   } , 
-                  child: Text('설명보러가기'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    minimumSize: Size(120,40),
+                  ),
+                  child: Text('설명보러가기',
+                  style: TextStyle(
+                    color: Colors.white,
+
+                  ),
+                  ),
                   ),
                 ),
-                Padding(
+                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(onPressed:() {
+                    
                      Navigator.push(context,MaterialPageRoute(builder: (context){
-            return Info3();
-          }));
+                      return SecondPage();
+                           }));
                   } , 
-                  child: Text('장단점'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                     minimumSize: Size(120, 40),
+                  ),
+                 
+                  child: Text('장단점',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  ),
                   ),
                 )
               ],
