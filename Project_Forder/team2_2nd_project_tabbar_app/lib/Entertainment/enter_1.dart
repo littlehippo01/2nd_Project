@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Enter1 extends StatefulWidget {
-  const Enter1({super.key});
+class Home extends StatefulWidget {
+  const Home({super.key});
 
   @override
-  State<Enter1> createState() => _Enter1State();
+  State<Home> createState() => _HomeState();
 }
 
-class _Enter1State extends State<Enter1> {
+class _HomeState extends State<Home> {
   late String imageName;
 
   @override
@@ -31,50 +31,64 @@ class _Enter1State extends State<Enter1> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white,
-                  ),
-                  onPressed: () {
-                    _showdialog(context);
-                    },
-                  child: Text('앉아'),
-                  ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.red,
-                    foregroundColor: Colors.white,
-                  ),
-                  onPressed: () {
-                    _showdialog2(context);
-                  }, 
-                  child: Text('일어서'),
-                  ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      _showdialog(context);
+                      },
+                    child: Text('앉아'),
+                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      _showdialog2(context);
+                    }, 
+                    child: Text('일어서'),
+                    ),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/E2'),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pushNamed(context, '/E2'),
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      backgroundColor: Colors.blue,
+                      minimumSize: Size(130, 40)
                     ),
-                    backgroundColor: Colors.green,
+                    child: Text("다음 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
-                  child: Text("다음 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
-                ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/E3'),
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pushNamed(context, '/E3'),
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      backgroundColor: Colors.red,
+                      minimumSize: Size(130, 40)
                     ),
-                    backgroundColor: Colors.green,
+                    child: Text("마지막 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                   ),
-                  child: Text("마지막 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
                 ),
               ],
             ),
@@ -185,4 +199,4 @@ class _Enter1State extends State<Enter1> {
       Navigator.pushNamed(context, '/E2');
     }else{Navigator.pushNamed(context, '/E3');}
   }
-}
+}//Mail
