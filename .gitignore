@@ -1,8 +1,8 @@
 # Window, MacOS, Flutter, Dart, Images 의 ignore 을 추가함.
 #25.03.31 CJ
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,flutter,dart,images
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,flutter,dart,images
+# Created by https://www.toptal.com/developers/gitignore/api/macos,flutter,dart,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,flutter,dart,windows
 
 ### Dart ###
 # See https://www.dartlang.org/guides/libraries/private-files
@@ -96,71 +96,6 @@ lib/generated_plugin_registrant.dart
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
-### Images ###
-# JPEG
-*.jpg
-*.jpeg
-*.jpe
-*.jif
-*.jfif
-*.jfi
-
-# JPEG 2000
-*.jp2
-*.j2k
-*.jpf
-*.jpx
-*.jpm
-*.mj2
-
-# JPEG XR
-*.jxr
-*.hdp
-*.wdp
-
-# Graphics Interchange Format
-*.gif
-
-# RAW
-*.raw
-
-# Web P
-*.webp
-
-# Portable Network Graphics
-*.png
-
-# Animated Portable Network Graphics
-*.apng
-
-# Multiple-image Network Graphics
-*.mng
-
-# Tagged Image File Format
-*.tiff
-*.tif
-
-# Scalable Vector Graphics
-*.svg
-*.svgz
-
-# Portable Document Format
-*.pdf
-
-# X BitMap
-*.xbm
-
-# BMP
-*.bmp
-*.dib
-
-# ICO
-*.ico
-
-# 3D Images
-*.3dm
-*.max
-
 ### macOS ###
 # General
 .DS_Store
@@ -220,4 +155,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,flutter,dart,images
+# End of https://www.toptal.com/developers/gitignore/api/macos,flutter,dart,windows
