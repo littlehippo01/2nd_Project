@@ -13,6 +13,8 @@ class _Quiz3State extends State<Quiz3> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Quiz 3"),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
