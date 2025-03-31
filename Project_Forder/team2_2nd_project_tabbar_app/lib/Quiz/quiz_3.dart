@@ -10,6 +10,30 @@ class Quiz3 extends StatefulWidget {
 class _Quiz3State extends State<Quiz3> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Quiz 3"),
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                Navigator.pushNamed(context, '/Q2');
+              },
+              child: Text("Previous"),
+          ),
+            ElevatedButton(
+              onPressed: () {
+              Navigator.pushNamed(context, '/E1');
+              },
+              child: Text("Go to Enter"),
+              ),
+            ],
+          ),
+        ],
+      )
+    );
   }
 }
