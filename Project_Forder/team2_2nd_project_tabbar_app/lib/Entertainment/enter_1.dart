@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Enter1 extends StatefulWidget {
+  const Enter1({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Enter1> createState() => _Enter1State();
 }
 
-class _HomeState extends State<Home> {
+class _Enter1State extends State<Enter1> {
   late String imageName;
 
   @override
