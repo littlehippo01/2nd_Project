@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class Turning extends StatefulWidget {
-  const Turning({super.key});
+class Enter3 extends StatefulWidget {
+  const Enter3({super.key});
 
   @override
-  State<Turning> createState() => _TurningState();
+  State<Enter3> createState() => _Enter3State();
 }
 
-class _TurningState extends State<Turning> {
+class _Enter3State extends State<Enter3> {
   late int timeGoes;
   late Timer myTimer;
   late int speed;
