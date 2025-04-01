@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class Timer01 extends StatefulWidget {
-  const Timer01({super.key});
+class Enter2 extends StatefulWidget {
+  const Enter2({super.key});
 
   @override
-  State<Timer01> createState() => _Timer01State();
+  State<Enter2> createState() => _Enter2State();
 }
 
-class _Timer01State extends State<Timer01> {
+class _Enter2State extends State<Enter2> {
   late List imageName;
   late int currentPage;
   late Timer myTimer;
