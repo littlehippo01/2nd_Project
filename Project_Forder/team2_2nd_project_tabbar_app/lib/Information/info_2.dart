@@ -21,7 +21,7 @@ class _Info2State extends State<Info2> {
     },
     {
       "title": "📖보더콜리의 운동량",
-      "description": "하루 최소 2시간 이상의 운동이 필요하며,\n 다양한 놀이와 활동을 즐깁니다.",
+      "description": "하루 최소 2시간 이상의 운동이 필요하며,다양한 놀이와 활동을 즐깁니다.",
     },
     {
        "title": "📖보더콜리의 유래",
