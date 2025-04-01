@@ -84,6 +84,15 @@ class _Gall2State extends State<Gall2> {
               ),
 
               Text(""),
+              Text(
+                "Swipe로 다른 사진을 볼 수 있어요.",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 19,
+                  color: Colors.deepPurple,
+                ),
+              ),
+              Text(""),
               
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
