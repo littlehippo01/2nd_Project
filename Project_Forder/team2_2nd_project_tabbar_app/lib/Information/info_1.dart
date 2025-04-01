@@ -49,7 +49,7 @@ class _Info1State extends State<Info1> {
                   padding: const EdgeInsets.all(8.0),
                   child: ElevatedButton(onPressed:() {
                     Navigator.push(context,MaterialPageRoute(builder: (context){
-            return FirstPage();
+            return info2();
           }));
                   } , 
                   style: ElevatedButton.styleFrom(
@@ -69,7 +69,7 @@ class _Info1State extends State<Info1> {
                   child: ElevatedButton(onPressed:() {
                     
                      Navigator.push(context,MaterialPageRoute(builder: (context){
-                      return SecondPage();
+                      return Info3();
                            }));
                   } , 
                   style: ElevatedButton.styleFrom(
