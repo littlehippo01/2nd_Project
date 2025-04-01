@@ -78,6 +78,15 @@ class _Gall1State extends State<Gall1> {
             ),
 
             Text(""),
+            Text(
+              "아래 버튼을 이용해서 다른 사진을 볼 수 있어요.",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 19,
+                color: Colors.deepPurple,
+              ),
+            ),
+            Text(""),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
