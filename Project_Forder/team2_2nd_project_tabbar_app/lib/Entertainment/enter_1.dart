@@ -18,6 +18,13 @@ class _Enter1State extends State<Enter1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('산책 갈 준비할까요?',
+        ),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -59,38 +66,19 @@ class _Enter1State extends State<Enter1> {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E2'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.blue,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("다음 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/E2'),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
+                  backgroundColor: Colors.blue,
+                  minimumSize: Size(130, 40)
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E3'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.red,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("마지막 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  ),
-                ),
-              ],
+                child: Text("산책 나가기", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ],
         ),

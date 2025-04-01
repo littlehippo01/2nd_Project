@@ -20,13 +20,25 @@ class _Enter3State extends State<Enter3> {
     timeGoes = 0;
     speed = 0;
 
-    myTimer= Timer.periodic(Duration(milliseconds: 10), (timer) {
+    myTimer= Timer.periodic(Duration(microseconds: 100000), (timer) {
       turnImage();
     },);
+  }
+    @override
+  void dispose() {
+    myTimer.cancel();
+    super.dispose();
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('산책 갈 준비할까요?',
+        ),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        
+      ),
       backgroundColor: const Color.fromARGB(255, 244, 237, 225),
       body: Center(
         child: Column(
@@ -85,39 +97,6 @@ class _Enter3State extends State<Enter3> {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E2'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.red,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("전 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E1'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.blue,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("처음 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  ),
-                ),
-              ],
-            ),
           ],
         ),
       ),
@@ -125,16 +104,16 @@ class _Enter3State extends State<Enter3> {
   }
   speedButton(){
     myTimer.cancel();
-      speed-=20;
-    myTimer = Timer.periodic(Duration(milliseconds: speed), (timer) {
+      speed-=1000;
+    myTimer = Timer.periodic(Duration(microseconds: speed), (timer) {
       turnImage();
       setState(() {
       });
     },);}
   speedDown(){
     myTimer.cancel();
-    speed +=20;
-    myTimer = Timer.periodic(Duration(milliseconds: speed), (timer) {
+    speed +=1000;
+    myTimer = Timer.periodic(Duration(microseconds: speed), (timer) {
       turnImage();
       setState(() {
       });

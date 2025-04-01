@@ -47,6 +47,13 @@ class _Enter2State extends State<Enter2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('산책 갈 준비할까요?',
+        ),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        
+      ),
       backgroundColor: const Color.fromARGB(255, 244, 237, 225),
       body: Center(
         child: Column(
@@ -100,38 +107,19 @@ class _Enter2State extends State<Enter2> {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E1'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.red,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("전 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/E3'),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
+                  backgroundColor: Colors.blue,
+                  minimumSize: Size(130, 40)
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, '/E3'),
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.blue,
-                      minimumSize: Size(130, 40)
-                    ),
-                    child: Text("마지막 페이지", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                  ),
-                ),
-              ],
+                child: Text("공원 가기", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ],
         ),
