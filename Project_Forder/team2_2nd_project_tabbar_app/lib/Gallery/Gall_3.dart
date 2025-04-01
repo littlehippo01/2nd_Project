@@ -14,10 +14,11 @@ class _Gall3State extends State<Gall3> {
   late List<String> imagesFile;
   late int currentPage;
   late String imgNickName;
-  
+  late Timer tim;
   @override
   void initState() {
     super.initState();
+
 
     imagesFile = [
       'baby01.jpg',
@@ -31,11 +32,15 @@ class _Gall3State extends State<Gall3> {
     imgNickName = "아주 아주 아기 때";
 
     // Timer설치
-    Timer.periodic(Duration(seconds: 3), (timer) {
+    tim = Timer.periodic(Duration(seconds: 3), (timer) {
       changeImage();
     },);
   }
-
+    @override
+  void dispose() {
+    tim.cancel;
+    super.dispose();
+  }
   // Timer가 callback하는 Function
   changeImage() {
     currentPage++;
@@ -60,7 +65,6 @@ class _Gall3State extends State<Gall3> {
 
     setState(() {});
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

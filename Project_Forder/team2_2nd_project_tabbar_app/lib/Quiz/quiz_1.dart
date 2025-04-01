@@ -128,7 +128,7 @@ class _Quiz1State extends State<Quiz1> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 250, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [

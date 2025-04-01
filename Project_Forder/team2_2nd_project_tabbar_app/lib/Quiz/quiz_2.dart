@@ -194,7 +194,7 @@ class _Quiz2State extends State<Quiz2> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 20, 10, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 10, 10, 0),
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/Q3');
